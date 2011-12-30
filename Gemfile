@@ -37,3 +37,5 @@ end
 
 # Added
 gem 'rails-backbone'
+gem 'mustache'
+gem 'stache'

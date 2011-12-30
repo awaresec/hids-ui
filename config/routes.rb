@@ -1,4 +1,11 @@
 HidsUi::Application.routes.draw do
+  
+  match '/login' => "session#new", :via => :get
+  match '/login' => "session#create", :via => :post
+  match '/logout' => "session#destroy"
+  
+  root :to => "alerts#index"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

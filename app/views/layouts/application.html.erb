@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HidsUi</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<title>OSSEC Advanced Management</title>
+	<%= stylesheet_link_tag "ossec" %>
+  	<%= javascript_include_tag :defaults %>
+  	<%= csrf_meta_tag %>
 </head>
 <body>
+<div id="header">
+	<%= image_tag "ossec.jpg" %>
+	<div id="logout">
+		Authenticated as <%= @user.login %> - <%= link_to "Logout", '/logout' %>
+	</div>
+</div>
 
-<%= yield %>
+<ul id="tabs">
+	<li><a href="#">Dashboard</a></li>
+	<li><a href="#" id="current">Alerts</a></li>
+	<li><a href="#">Integrity</a></li>
+	<li><a href="#">Firewall</a></li>
+	<li><a href="#">Agents</a></li>
+</ul>
+
+<div id="actions">
+	<h1>Actions</h1>
+	<ul>
+		<li><a href="#">List all alerts</a></li>
+		<li><a href="#">Search an alert</a></li>
+		<li><a href="#">Edit alerts</a></li>
+	</ul>
+</div>
+
+<div id="main-wrapper">
+	<div id="main">
+		<%= yield %>
+	</div>
+</div>
 
 </body>
 </html>
