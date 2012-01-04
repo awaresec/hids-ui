@@ -39,17 +39,16 @@
 	}
 	
 	div.alert_level, div.alert_level_head {
-		width: 30px;
 		text-align: center;
 		font-size: 10pt;
 		float: right;
+		width: 80px;
 	}
 	
 	div.alert_level {
 		margin: 0;
 		
 		div {
-			width: 25px;
 			height: 25px;
 			border-radius: 5px;
 			margin-top: 1px;
@@ -57,6 +56,7 @@
 			div {
 				padding-top: 5px;
 				font-weight: bold;
+				color: white;
 			}
 		}
 		
@@ -122,6 +122,22 @@
 
 		.alert_level_0 {
 			background-color: #FFEEEE;
+		}
+		
+		.alert_level_Critical {
+			background-color: #FF0000;
+		}
+		
+		.alert_level_Major {
+			background-color: #FF6600;
+		}
+		
+		.alert_level_Minor {
+			background-color: #FFCC00;
+		}
+		
+		.alert_level_Info {
+			background-color: #0099CC;
 		}
 	}
 }
