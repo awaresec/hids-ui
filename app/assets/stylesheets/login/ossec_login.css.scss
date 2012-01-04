@@ -1,0 +1,50 @@
+body {
+	background: #DEDEDE;
+}
+
+#login-form {
+	margin: auto;
+	width: 400px;
+	text-align: center;
+	position: relative;
+	top: 150px;
+	border: 3px solid #666666;
+	background-color: black;
+}
+
+#error {
+	color: red;
+	font-family: Helvetica, Arial;
+	font-weight: bold;
+}
+
+#login-form img {
+	width: 300px;
+}
+
+#login-form label {
+	font-family: Helvetica, Arial;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-left: 50px;
+	display: block;
+	text-align: left;
+}
+
+#login-form input {
+	width: 300px;
+	border: 2px solid #0099CC;
+	margin-bottom: 10px;
+}
+
+#login-form input[type=submit] {
+	margin-top: 15px;
+	width: 300px;
+	background-color: #0099CC;
+	border: 1px solid #666666;
+	color: white;
+	font-family: Helvetica, Arial;
+	text-transform: uppercase;
+	font-weight: bold;
+}

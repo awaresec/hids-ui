@@ -1,0 +1,15 @@
+<h1>Listing Alerts</h1>
+
+<ul id="alerts">
+	<li class="alerts_head">
+		<div class="alert_level_head">Lvl</div>
+		<div class="alert_time">Time</div>
+		<div class="alert_description">Description</div>
+	</li>
+	{{#alerts}}
+		{{> alert}}
+	{{/alerts}}
+</ul>
+
+
+{{{alert_details_template}}}
